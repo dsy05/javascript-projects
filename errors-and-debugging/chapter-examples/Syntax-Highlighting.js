@@ -1,2 +1,2 @@
-let name = Julie;
-console.log("Hello, name);
+let names = "Julie";
+console.log("Hello" , names);
