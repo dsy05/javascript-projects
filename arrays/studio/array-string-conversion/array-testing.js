@@ -3,7 +3,12 @@ let protoArray2 = "A;C;M;E";
 let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
-strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+let strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+
+//1)
+let stringSplit = [];
+stringInclude = string.includes(",");
+console.log(stringSplit);
 
 //2) 
 function reverseCommas() {
