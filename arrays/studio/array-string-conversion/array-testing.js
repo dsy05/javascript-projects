@@ -3,49 +3,87 @@ let protoArray2 = "A;C;M;E";
 let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
-let strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
-//1)
-let stringSplit = [];
-stringInclude = string.includes(",");
-console.log(stringSplit);
 
-//2) 
-function reverseCommas() {
+	// console.log(strings);
+	// console.log(strings[0].includes(','));
+	// console.log(strings[1].includes(";"));
+	// console.log(strings[2].includes(" "));
+	// console.log(strings[3].includes(", "));
+	// console.log(strings[0]);
+	// console.log(strings[1]);
+	// console.log(strings[2]);
+	// console.log(strings[3]);
+
+
+function reverseCommas(protoArray) {
 	//TODO: 1. create and instantiate your variables.
-	let check;
+
+	let check = protoArray.includes(",");
 	let output;
+	let convertedArray;
 	//TODO: 2. write the code required for this step
 
+	if (check) {
+		convertedArray = (protoArray.split(",").reverse().join(","));
+		output =convertedArray;
+	} else {
+	}
+	
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
 }
 
 //3)
-function semiDash() {
-	let check;
-	let output;
-//TODO: write the code required for this step
+function semiDash(protoArray) {
 
-  
+	let check = protoArray.includes(";");
+	let output;
+	let convertedArray;
+	//TODO: write the code required for this step
+
+	if (check) {
+		convertedArray = (protoArray.split(';').sort().join('-'));
+		output = convertedArray;
+	} else {
+	}
+	  
 	return output;
 }
 
 //4)
-function reverseSpaces() {
-	let check;
+function reverseSpaces(protoArray) {
+
+	let check = protoArray.includes(" ");
 	let output;
+	let convertedArray;
   //TODO: write the code required for this step
 
+ 	 if (check) {
+		convertedArray = (protoArray.split(' ').sort().reverse().join(' '));
+		output = convertedArray
+		} else {
+	check = false;
+		}
+		
 	return output;
 }
 
 //5)
-function commaSpace() {
-	let check;
+function commaSpace(protoArray) {
+
+	let check = protoArray.includes(", ");
 	let output;
+	let convertedArray;
 	//TODO: write the code required for this step
-  
+
+	if (check) {
+		convertedArray = protoArray.split(', ').reverse().join(',');
+		output = convertedArray;
+		} else {
+		}
+
 	return output;
 }
 
