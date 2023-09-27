@@ -96,7 +96,11 @@ console.log(funPhrase(str));
 // 5. Use a template literal to print, “The area is ____ cm^2.”
 
 function areaOfARectangle(length, width) {
-
-
+    if (width) {
+        area = length * width;
+    } else {
+        area = length * length;
+    }
     return area;
 }
+console.log(`The area is ${(areaOfARectangle(2, 4))} cm^2`);
