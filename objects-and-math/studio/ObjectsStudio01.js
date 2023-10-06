@@ -44,32 +44,46 @@ let candidateF = {
 
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
-// Code your buildCrewArray function here:
-
 let idNumbers = [291, 414, 503, 599, 796, 890];
 
 // Code your selectRandomEntry function here:
 
-function selectRandomEntry(idNumbers) {
-
-  let idNumber = Math.floor(Math.random()*arrayName.length);
-
-  return arrayName[idNumber];
+function selectRandomEntry(idNumber) {
+  //let selectedIDNumber = idNumber[Math.floor(Math.random()*idNumber.length)];
+  return idNumber[Math.floor(Math.random()*idNumber.length)];
 };
 
-console.log(selectRandomEntry(idNumber)); 
+//console.log(selectRandomEntry(idNumbers)); 
 
-// let selectedCrewId = [];
-// for (let i = 0; i <= 3; i++) {
-//   crewMember = selectRandomEntry(idNumbers);
-//   while (crewCrewId.includes(idNumber)) {
-//     crewMember
-//   }
+// Code your buildCrewArray function here:
 
-// }
+let buildCrewArray = function(ids, candidates) { 
+  //selectedIDs(selectedCrewId);
+  let crewNameArray = [];
+  for (let i = 0; i < candidates.length; i++) {
+      if (ids.includes(candidates[i].astronautID)) {
+      crewNameArray.push(candidates[i]);
+      }
+    }
+    return crewNameArray;
+  }
 
+//function selectedIDs(idArray) {
+  let selectedIDArray = [];
+  for (let i = 0; i < 3; i++) {
+    let crewMember = selectRandomEntry(idNumbers);
+    while (selectedIDArray.includes(crewMember)) {
+       crewMember = selectRandomEntry(idNumbers);
+      }
+  selectedIDArray.push(crewMember);
+  }
+  
+//}
 
+//checking if selecting 3 different crew
+console.log(selectedIDArray);
 
-//let 
-
+console.log(buildCrewArray(selectedIDArray, animals));
+let theCrew = buildCrewArray(selectedIDArray, animals)
 // Code your template literal and console.log statements:
+console.log(`${theCrew[0].name}, ${theCrew[1].name}, and ${theCrew[2].name} are going to space!`);
