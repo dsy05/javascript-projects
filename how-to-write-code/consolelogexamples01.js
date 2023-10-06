@@ -1,3 +1,5 @@
+
+/*
 console.log('Hello, JavaScript.');
 console.log(2001);
 console.log("What","do","commas","do?");
@@ -9,6 +11,7 @@ console.log(String(17));
 console.log(String(123.45));
 console.log(typeof String(123.45));
 console.log(Number('3 3'));
+*/
 //let programmingLanguage = "JavaScript";
 
 //let message = "What's up, Doc?";
@@ -59,8 +62,8 @@ console.log(2 ** 3 ** 2)
 // use parentheses to force the order you want
 console.log((2 ** 3) ** 2)
 */
-console.log (16 - 2 * 5 / 3 + 1)
-console.log(1 + 5 % 3);
+//console.log (16 - 2 * 5 / 3 + 1)
+//console.log(1 + 5 % 3);
 /*
 console.log(2 ** 2 ** 3 * 3)
 
@@ -103,10 +106,120 @@ let info = input.question("Please enter your age: ");
 
 console.log(typeof info);
 */
-
+/*
 const input = require('readline-sync');
 
 let num1 = Number(input.question("Enter a number: "));
 let num2 = Number(input.question("Enter another number: "));
 
 console.log(num1 + num2);
+
+*/
+
+//Chapter 5
+/*
+console.log(true);
+console.log(typeof true);
+console.log(typeof false);
+
+console.log(typeof true);
+console.log(typeof "true");
+
+console.log(Boolean("true"));
+console.log(Boolean("TRUE"));
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(''));
+console.log(Boolean('LaunchCode'));
+*/
+//console.log(4 == "4");
+//console.log(5 == 6);
+//console.log(true == "true");
+
+//console.log(7 > 5 && 5 > 3);
+//console.log(7 > 5 && 2 > 3);
+//console.log(2 > 3 && 'dog' === 'cat');
+
+//console.log(7 > 5 || 5 > 3);
+//console.log(7 > 5 || 2 > 3);
+//console.log(2 > 3 || 'dog' === 'cat');
+
+//console.log(!true);
+//console.log(!false);
+
+//console.log( !(5 > 7) );
+//console.log( !('dog' === 'cat') );
+
+
+//console.log (4 < 3 || 2 < 3);
+
+//let billHasBeenPaid = false;
+
+//if (!billHasBeenPaid) {
+//   console.log("Your bill is due soon!");
+//}
+/*
+let num = 4
+if (num % 2 === 0 && num > 3) {
+    console.log(num, "is even");
+    console.log(num, "is greater than 3");
+ }
+
+ let billHasBeenPaid = true;
+
+if (!billHasBeenPaid) {
+   console.log("Your bill is due soon!");
+} else {
+   console.log("Your payments are up to date.");
+}
+
+let x = 30;
+let y = 30;
+
+if (x > y) {
+   console.log("x is greater than y");
+} else if (x < y) {
+   console.log("x is less than y");
+} else {
+   console.log("x and y are equal");
+}
+
+let a = 7;
+if (a % 2 === 1) {
+   console.log("Launch");
+} else if (a > 5) {
+   console.log("Code");
+} else {
+   console.log("LaunchCode");
+}
+
+
+let num = 7;
+
+if (num % 2 === 0) {
+   console.log("EVEN");
+}
+
+if (num > 0) {
+   console.log("POSITIVE");
+}
+
+
+let num = 11;
+
+if (num % 2 === 0) {
+    console.log("EVEN");
+
+    if (num > 0) {
+        console.log("POSITIVE");
+    }
+}
+*/
+
+let num = 9;
+
+if (num % 2 === 0) {
+    if (num % 2 === 1) {
+        console.log("odd");
+    }
+}

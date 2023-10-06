@@ -77,7 +77,6 @@ let fitnessTest = function(arr) {
 }
 console.log(`${fitnessTest(animalsArray).join('\n')}`);
 
-//console.log(fitnessTest(animalsArray).join(" "));
 
    
 
