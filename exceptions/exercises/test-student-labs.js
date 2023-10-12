@@ -7,7 +7,6 @@ function gradeLabs(labs) {
   } catch(err) {
       console.log(`${lab.student} code worked: Error thrown`);
   }
-    
   }
 }
 

@@ -24,7 +24,6 @@ let choice = ['rock', 'paper', 'scissors'];
     }
   }
 
-
  module.exports = {
   whoWon: whoWon
  }

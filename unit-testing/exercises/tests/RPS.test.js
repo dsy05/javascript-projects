@@ -36,6 +36,5 @@ describe("Rock, Paper, Scissors Check", function(){
         expect(check.whoWon('scissors', 'paper')).toBe("Player 1 wins!");
         expect(check.whoWon('rock', 'scissors')).toBe("Player 1 wins!");
     });
-
-
+    
  });
