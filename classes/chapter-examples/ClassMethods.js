@@ -25,8 +25,14 @@ class AstronautI {
    }
  }
  
- let fox = new AstronautI('Fox', 7, 12);
- let hippo = new AstronautO('Hippo', 25, 1000);
- 
+ let fox = new AstronautO('Fox', 7, 12);
+
+ console.log(`outside constructor`);
  console.log(fox);
+ console.log(fox.reportStats());
+ 
+ let hippo = new AstronautI('Hippo', 25, 1000);
+ 
+ console.log(`inside constructor`);
  console.log(hippo);
+ console.log(hippo.reportStats());
