@@ -1,4 +1,4 @@
-//Create an array that can hold 4 items name practiceFile.
+//Create an array called practiceFile with the following entry: 273.15
 
 let practiceFile = [
     273.15,
